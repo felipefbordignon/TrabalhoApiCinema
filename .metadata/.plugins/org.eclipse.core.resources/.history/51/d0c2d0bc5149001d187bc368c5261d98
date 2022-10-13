@@ -1,0 +1,38 @@
+package com.api.cinema.entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "diretor")
+public class Diretor {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "Id_direto")
+	private Integer id_diretor;
+
+	@Column(name = "nome")
+	private String nome;
+
+	public Integer getId_diretor() {
+		return id_diretor;
+	}
+
+	public void setId_diretor(Integer id_diretor) {
+		this.id_diretor = id_diretor;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+}

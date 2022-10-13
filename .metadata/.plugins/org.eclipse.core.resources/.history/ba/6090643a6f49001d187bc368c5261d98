@@ -1,0 +1,5 @@
+package com.api.cinema.repository;
+
+public interface Filme {
+
+}

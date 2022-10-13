@@ -1,0 +1,17 @@
+package com.api.cinema.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="fime")
+public class Filme {
+	
+	private Integer id_filme;
+	private String nome_br;
+	private String nome_en;
+	private String ano_lancamento;
+	private String sinopse;
+	
+
+}
